@@ -1,0 +1,36 @@
+.row {
+  margin-left: 20px;
+}
+
+.row-posters {
+  /* 포스터들 가로로 정렬*/
+  display: flex;
+  /* 가로로 스크롤 생기고 세로로는 안보이게 */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row-poster:hover {
+  transform: scale(1.08);
+}
+
+.row-posterLarge {
+  max-height: 250px;
+}
+
+.row-posterLarge:hover {
+  transform: scale(1.09);
+}
