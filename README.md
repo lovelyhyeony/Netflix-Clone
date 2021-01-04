@@ -7,3 +7,5 @@
 
 - TMDB api
 - axios
+- react-youtube
+- movie-trailer
